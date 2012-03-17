@@ -5,13 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{new_responds_to_parent}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Huynh"]
   s.date = %q{2012-03-17}
-  s.description = %q{Adds responds_to_parent to your controller to respond to the parent document of your page. Make Ajaxy file uploads by posting the form to a hidden iframe, and respond with javascript call to the parent window
-  }
+  s.description = %q{Adds responds_to_parent to your controller to respond to the parent document of your page. Make Ajaxy file uploads by posting the form to a hidden iframe, and respond with javascript call to the parent window. This gem version can support rails 3.0+}
   s.email = %q{james@rubify.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
