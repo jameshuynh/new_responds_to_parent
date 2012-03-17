@@ -18,7 +18,8 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/jameshuynh/new_responds_to_parent"
   gem.license = "MIT"
   gem.summary = %Q{This is the gem version for famous responds_to_parent plugin - support rails 3+}
-  gem.description = %Q{No more thing to say here =)}
+  gem.description = %Q{Adds responds_to_parent to your controller to respond to the parent document of your page. Make Ajaxy file uploads by posting the form to a hidden iframe, and respond with javascript call to the parent window
+  }
   gem.email = "james@rubify.com"
   gem.authors = ["James Huynh"]
   # dependencies defined in Gemfile
