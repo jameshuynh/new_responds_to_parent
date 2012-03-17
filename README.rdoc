@@ -1,8 +1,47 @@
-= new_responds_to_parent
+= responds_to_parent
 
-Description goes here.
+Adds responds_to_parent to your controller to respond to the parent document of your page.
+Make Ajaxy file uploads by posting the form to a hidden iframe, and respond with javascript call to the parent window
 
-== Contributing to new_responds_to_parent
+== Example
+
+Example
+=======
+
+Controller:
+ 
+  class Test < ActionController::Base
+    def main
+    end
+ 
+    def form_action
+      # Do stuff with params[:uploaded_file]
+        
+      responds_to_parent do
+        render :update do |page|
+          page << "alert($('stuff').innerHTML)"
+        end
+      end
+    end
+  end
+ 
+main.html.erb:
+ 
+  <html>
+    <body>
+      <div id="stuff">Here is some stuff</div>
+ 
+      <form target="frame" action="form_action">
+        <input type="file" name="uploaded_file"/>
+        <input type="submit"/>
+      </form>
+ 
+      <iframe id='frame' name="frame"></iframe>
+    </body>
+  </html>
+  
+  
+== Contributing to responds_to_parent
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.

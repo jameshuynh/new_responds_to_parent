@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "new_responds_to_parent"
   gem.homepage = "http://github.com/jameshuynh/new_responds_to_parent"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{This is the gem version for famous responds_to_parent plugin - support rails 3+}
+  gem.description = %Q{No more thing to say here =)}
   gem.email = "james@rubify.com"
   gem.authors = ["James Huynh"]
   # dependencies defined in Gemfile
