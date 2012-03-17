@@ -16,12 +16,9 @@ Controller:
  
     def form_action
       # Do stuff with params[:uploaded_file]
-        
-      responds_to_parent do
-        render :update do |page|
-          page << "alert($('stuff').innerHTML)"
-        end
-      end
+      responds_to_parent do 
+        render :js => "alert($(#stuff').html())"
+      end      
     end
   end
  
